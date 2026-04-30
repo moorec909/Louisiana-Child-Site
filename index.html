@@ -6,7 +6,7 @@
     <title>Louisiana Child</title>
 
     <!-- SEO -->
-    <meta name="description" content="Louisiana Child — Toronto rock band. Southern rock, blues, roots. Stream on Spotify, Apple Music, YouTube. Booking: booking@louisianachild.ca">
+    <meta name="description" content="Louisiana Child — Toronto rock band. Southern rock, blues, roots. Stream on Spotify, Apple Music, YouTube. Booking: louisianachildband@gmail.com">
     <meta name="theme-color" content="#000000">
     <link rel="canonical" href="https://louisianachild.ca/">
 
@@ -41,7 +41,7 @@
         "@type": "Place",
         "name": "Toronto, Ontario, Canada"
       },
-      "email": "booking@louisianachild.ca",
+      "email": "louisianachildband@gmail.com",
       "sameAs": [
         "https://www.instagram.com/louisianachild",
         "https://www.tiktok.com/@louisianachild",
@@ -260,7 +260,7 @@
             font-size: clamp(1.4rem, 3.5vw, 1.9rem);
             font-weight: 700;
             color: #ece8da;
-            text-transform: uppercase;
+            text-transform: none;
             letter-spacing: 0.2em;
             margin-bottom: 3rem;
         }
@@ -288,9 +288,60 @@
             display: inline-block;
         }
 
+        .shows-list {
+            list-style: none;
+            padding: 0;
+            margin: 40px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+        .show {
+            text-align: center;
+        }
+        .show-date {
+            font-size: 1.1rem;
+            letter-spacing: 0.15em;
+            color: #faf3e2;
+            margin-bottom: 8px;
+        }
+        .show-venue {
+            font-size: 1rem;
+            color: #faf3e2;
+            margin-bottom: 4px;
+        }
+        .show-city {
+            font-size: 0.9rem;
+            color: #faf3e2;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
         /* Music */
         .music {
             background: #070707;
+        }
+
+        .ep-announce {
+            padding: 80px 40px;
+            background: #000;
+        }
+        .video-wrap {
+            position: relative;
+            width: 100%;
+            max-width: 360px;
+            aspect-ratio: 9 / 16;
+            margin: 40px auto 0;
+            background: #000;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+        .video-wrap iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
 
         /* Merch */
@@ -445,13 +496,38 @@
         <div class="vignette"></div>
     </section>
 
+    <section class="ep-announce">
+        <div class="section-container">
+            <h2 class="section-title">NEW EP OUT MAY 5TH</h2>
+            <div class="video-wrap">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/jzPLV3I4IXw"
+                    title="Louisiana Child — New EP Out May 5"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
     <!-- Tour -->
     <section class="shows" id="tour">
         <div class="section-container">
-            <h2 class="section-title">Tour</h2>
-            <div class="coming-soon">
-                <span>Coming Soon</span>
-            </div>
+            <h2 class="section-title">TOUR</h2>
+            <ul class="shows-list">
+                <li class="show">
+                    <div class="show-date">MAY 12 · 2026</div>
+                    <div class="show-venue">The Horseshoe Tavern</div>
+                    <div class="show-city">Toronto</div>
+                </li>
+                <li class="show">
+                    <div class="show-date">MAY 28 · 2026</div>
+                    <div class="show-venue">Tapestry · Record Release Party</div>
+                    <div class="show-city">Toronto</div>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -496,7 +572,7 @@
             <h2 class="section-title">Connect</h2>
             <div class="booking">
                 <p>For booking inquiries:</p>
-                <a href="mailto:booking@louisianachild.ca" class="email-link">booking@louisianachild.ca</a>
+                <a href="mailto:louisianachildband@gmail.com" class="email-link">louisianachildband@gmail.com</a>
             </div>
         </div>
     </section>
